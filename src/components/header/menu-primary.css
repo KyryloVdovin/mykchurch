@@ -1,0 +1,38 @@
+.menu-primary-container {
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+}
+
+.nav-menu {
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 24px 0;
+}
+
+.menu-item {
+    margin-right: 10px;
+    list-style: none;
+
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.menu-item a {
+    padding: 7px 9px;
+    display: inline-block;
+
+    text-decoration: none;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.menu-item .active {
+    color: #1c7c7c;
+}
+.menu-item a {
+    transition: color 0.25s ease;
+}
+.menu-item a:hover {
+    color: #1c7c7c;
+}
