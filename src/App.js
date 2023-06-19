@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header/header';
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import AboutUsContainer from './components/aboutUs/aboutUs-container';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ const PageContent = () => {
         </NavLink>
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path="/aboutUs" element={<div>о нас</div>} />
+            <Route path="/aboutUs" element={<AboutUsContainer />} />
             <Route path='/repent' element={<div> покаяние</div>} />
             <Route path='/photos' element={<div>фотоальбом</div>} />
             <Route path="/contactUs" element={<div> обратная связь</div>} />

@@ -1,0 +1,18 @@
+.description-text{
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
+    text-align: left;
+}
+.border{
+    /* height: 2px; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.entry-title{
+    font-size: 22px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
