@@ -13,10 +13,11 @@ const aboutUsData = {
         afternoon: 'вс. 15:00 — Общее служенние'
     },
     churchPhoto: 'https://nikchurch.files.wordpress.com/2017/01/vy2csbnteta.jpg?w=937',
-    locationMap: {
-        "lat": 46.85325334450125,
-        "lng": 32.00485839621482
-    }
+    center: {
+        lat: 46.85325334450125,
+        lng: 32.00485839621482
+    },
+    zoom: 18
 };
 
 export default aboutUsData;

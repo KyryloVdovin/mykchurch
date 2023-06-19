@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/header';
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import AboutUsContainer from './components/aboutUs/aboutUs-container';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ const PageContent = () => {
             <Route path="/contactUs" element={<div> обратная связь</div>} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </div>
   )

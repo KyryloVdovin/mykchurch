@@ -7,7 +7,9 @@ let mapStatetoProps = (state) => {
         ourLocation: state.aboutUsPage.ourLocation,
         morningPrayer: state.aboutUsPage.morningPrayer,
         sundayMinistry: state.aboutUsPage.sundayMinistry,
-        churchPhoto: state.aboutUsPage.churchPhoto
+        churchPhoto: state.aboutUsPage.churchPhoto,
+        center: state.aboutUsPage.center,
+        zoom: state.aboutUsPage.zoom,
     }
 }
 

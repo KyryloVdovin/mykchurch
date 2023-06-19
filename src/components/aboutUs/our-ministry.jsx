@@ -8,7 +8,7 @@ const OurMinistry = ({ourLocation, morningPrayer, sundayMinistry, churchPhoto}) 
             <p className='description-text'>{morningPrayer}</p>
             <p className='description-text'>{sundayMinistry.morning}</p>
             <p className='description-text'>{sundayMinistry.afternoon}</p>
-            <img src={churchPhoto} />
+            <img className="church-img" src={churchPhoto} />
         </div>
     )
 }
