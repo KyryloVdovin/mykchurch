@@ -1,0 +1,84 @@
+.share-btn-icon {
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.share-btn-list {
+    display: flex;
+    gap: 10px;
+}
+
+.share-btn-list a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 10px;
+
+    position: relative;
+}
+
+.share-btn-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.share-btn-list li {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    min-height: 30px;
+
+    font-size: 13px;
+}
+
+.share-btn-list {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.share-btn-list a:hover::after {
+    width: 100%;
+}
+
+.share-btn-list a::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    background: #f47f3c;
+    transition: all .35s;
+}
+
+.share-btn-list span {
+    line-height: 13px;
+    margin-left: 24px;
+    color: #464545;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+.share-btn-subtitle-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h2.share-btn-subtitle {
+    text-align: left;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.share-btn-subtitle:before {
+    content: "";
+    display: block;
+    width: 100%;
+    min-width: 30px;
+    border-top: 1px solid #dcdcde;
+    margin-bottom: 6px;
+}

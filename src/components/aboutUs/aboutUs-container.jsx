@@ -11,6 +11,7 @@ let mapStatetoProps = (state) => {
         churchPhoto: state.aboutUsPage.churchPhoto,
         center: state.aboutUsPage.center,
         zoom: state.aboutUsPage.zoom,
+        entryTitle: state.aboutUsPage.entryTitle,
     }
 }
 

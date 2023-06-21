@@ -18,7 +18,8 @@ const aboutUsData = {
         lat: 46.85325334450125,
         lng: 32.00485839621482
     },
-    zoom: 18
+    zoom: 18,
+    entryTitle: "О нас",
 };
 
 export default aboutUsData;

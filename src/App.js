@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/header';
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import AboutUsContainer from './components/aboutUs/aboutUs-container';
+import RepentanceContainer from './components/repentance/repentanc-container';
 import Footer from './components/footer/footer';
 
 function App() {
@@ -25,7 +26,7 @@ const PageContent = () => {
         <div className='app-wrapper-content'>
           <Routes>
             <Route path="/aboutUs" element={<AboutUsContainer />} />
-            <Route path='/repent' element={<div> покаяние</div>} />
+            <Route path='/repent' element={<RepentanceContainer />} />
             <Route path='/photos' element={<div>фотоальбом</div>} />
             <Route path="/contactUs" element={<div> обратная связь</div>} />
           </Routes>
