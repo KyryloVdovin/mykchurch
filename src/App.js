@@ -3,6 +3,7 @@ import Header from './components/header/header';
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import AboutUsContainer from './components/aboutUs/aboutUs-container';
 import RepentanceContainer from './components/repentance/repentanc-container';
+import PhotoAlbumContainer from './components/photo-album/photo-album-container';
 import Footer from './components/footer/footer';
 
 function App() {
@@ -27,7 +28,7 @@ const PageContent = () => {
           <Routes>
             <Route path="/aboutUs" element={<AboutUsContainer />} />
             <Route path='/repent' element={<RepentanceContainer />} />
-            <Route path='/photos' element={<div>фотоальбом</div>} />
+            <Route path='/photos' element={<PhotoAlbumContainer />} />
             <Route path="/contactUs" element={<div> обратная связь</div>} />
           </Routes>
         </div>
