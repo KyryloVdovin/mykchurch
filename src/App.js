@@ -19,8 +19,8 @@ const PageContent = () => {
     <div className='page-wrapper'>
       <div className='page'>
         <Header />
-        <NavLink to="/">
-          <img class="custom-header" src="https://nikchurch.files.wordpress.com/2016/12/cropped-6973028-dove-sun-rays5.jpg" width="937" height="443" alt=""></img>
+        <NavLink className="church-logo" to="/">
+          <img src="https://nikchurch.files.wordpress.com/2016/12/cropped-6973028-dove-sun-rays5.jpg" width="937" height="443" alt=""></img>
         </NavLink>
         <div className='app-wrapper-content'>
           <Routes>

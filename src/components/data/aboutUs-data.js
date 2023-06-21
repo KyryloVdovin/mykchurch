@@ -12,6 +12,7 @@ const aboutUsData = {
         morning: 'вс. 09:00 — Общее служенние',
         afternoon: 'вс. 15:00 — Общее служенние'
     },
+    youthMinistry: 'сб. 12:00 — Молодежное служение',
     churchPhoto: 'https://nikchurch.files.wordpress.com/2017/01/vy2csbnteta.jpg?w=937',
     center: {
         lat: 46.85325334450125,

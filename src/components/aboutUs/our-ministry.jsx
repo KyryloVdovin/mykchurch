@@ -1,6 +1,6 @@
 
 
-const OurMinistry = ({ourLocation, morningPrayer, sundayMinistry, churchPhoto}) => {
+const OurMinistry = ({ourLocation, morningPrayer, sundayMinistry, churchPhoto, youthMinistry}) => {
 
     return (
         <div>
@@ -8,6 +8,7 @@ const OurMinistry = ({ourLocation, morningPrayer, sundayMinistry, churchPhoto}) 
             <p className='description-text'>{morningPrayer}</p>
             <p className='description-text'>{sundayMinistry.morning}</p>
             <p className='description-text'>{sundayMinistry.afternoon}</p>
+            <p className='description-text'>{youthMinistry}</p>
             <img className="church-img" src={churchPhoto} />
         </div>
     )

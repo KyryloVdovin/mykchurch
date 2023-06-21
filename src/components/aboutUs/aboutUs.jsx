@@ -12,7 +12,7 @@ const AboutUs = (props) => {
             </div>
 
             <AboutUsDescription aboutUsDescription={props.aboutUsDescription} />
-            <OurMinistry ourLocation={props.ourLocation} morningPrayer={props.morningPrayer} sundayMinistry={props.sundayMinistry} churchPhoto={props.churchPhoto} />
+            <OurMinistry ourLocation={props.ourLocation} morningPrayer={props.morningPrayer} youthMinistry={props.youthMinistry} sundayMinistry={props.sundayMinistry} churchPhoto={props.churchPhoto} />
             <LocationMap center={props.center} zoom={props.zoom} />
             <LikeButton />
         </div>

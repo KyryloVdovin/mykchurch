@@ -1,0 +1,41 @@
+.social-network-icon{
+    width: 100%;
+    transition: width 0.25s ease;
+}
+.social-network-menu li{
+    width: 36px;
+    height: 36px;
+}
+.social-network-menu li:hover .social-network-icon{
+    width: 115%;
+
+}
+.social-network-menu li{
+    width: 36px;
+    height: 36px;
+}
+.social-network-menu li:nth-child(1){
+    margin-right: 5px;
+}
+.social-network-menu a{
+    display: block;
+    height: 36px;
+}
+
+.social-network-menu{
+    display: flex;
+}
+.footer-wrapper{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 26px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.footer{
+    margin-top: 65px;
+    border-top: 3px solid #eee;
+}
+.site-info p{
+    color: #999;
+}

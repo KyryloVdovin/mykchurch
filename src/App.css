@@ -46,3 +46,13 @@
   text-transform: uppercase;
   color: #666;
 }
+
+.church-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.church-logo img {
+  border-radius: 5px;
+
+}

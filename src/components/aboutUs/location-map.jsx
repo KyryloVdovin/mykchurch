@@ -6,7 +6,7 @@ const LocationMap = ({ center, zoom }) => {
         new maps.Marker({
             position: center,
             map: map,
-            title: 'Hello World!'
+            title: 'Церковь Иисуса Христа'
         });
     };
 
