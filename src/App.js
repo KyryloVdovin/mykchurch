@@ -5,6 +5,7 @@ import AboutUsContainer from './components/aboutUs/aboutUs-container';
 import RepentanceContainer from './components/repentance/repentanc-container';
 import PhotoAlbumContainer from './components/photo-album/photo-album-container';
 import Footer from './components/footer/footer';
+import ContactUs from './components/contactUs/contact-us';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ const PageContent = () => {
             <Route path="/aboutUs" element={<AboutUsContainer />} />
             <Route path='/repent' element={<RepentanceContainer />} />
             <Route path='/photos' element={<PhotoAlbumContainer />} />
-            <Route path="/contactUs" element={<div> обратная связь</div>} />
+            <Route path="/contactUs" element={<div> <ContactUs /></div>} />
           </Routes>
         </div>
         <Footer />

@@ -2,32 +2,11 @@ import React, { useState } from "react";
 import { PhotoAlbum } from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-
-const photos = [
-    {
-        src: "https://nikchurch.files.wordpress.com/2017/04/10575326_10207740641170649_4568157565143207826_o.jpg?w=414&resize=414%2C311&h=311#038;h=311", 
-        width: 1600, height: 1200,
-        // srcSet: [
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/10575326_10207740641170649_4568157565143207826_o.jpg?w=414&resize=414%2C311&h=311#038;h=311", width: 400, height: 300 },
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/10575326_10207740641170649_4568157565143207826_o.jpg?w=414&resize=414%2C311&h=311#038;h=311", width: 200, height: 150 }
-        // ]
-    },
-    {
-        src: "https://nikchurch.files.wordpress.com/2017/04/dsc03494.jpg?w=391&resize=391%2C293&h=293#038;h=293",
-        width: 1600, height: 900,
-        // srcSet: [
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/dsc03494.jpg?w=391&resize=391%2C293&h=293#038;h=293", width: 400, height: 300 },
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/dsc03494.jpg?w=391&resize=391%2C293&h=293#038;h=293", width: 200, height: 150 }
-        // ]
-    },
-    {
-        src: "https://nikchurch.files.wordpress.com/2017/04/rzpquxnmx-q.jpg?w=652&resize=652%2C489&h=489#038;h=489", width: 1600, height: 900,
-        // srcSet: [
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/rzpquxnmx-q.jpg?w=652&resize=652%2C489&h=489#038;h=489", width: 400, height: 300 },
-        //     { src: "https://nikchurch.files.wordpress.com/2017/04/rzpquxnmx-q.jpg?w=652&resize=652%2C489&h=489#038;h=489", width: 200, height: 150 }
-        // ]
-    },
-];
+import photoAlbumData from '../data/photo-album-data';
+import EntryTitle from '../general-components/entry-title';
+import ShareButtonsContainer from '../repentance/share-buttons-container';
+import LikeButton from '../general-components/like-button';
+import './photo-album.css';
 
 const Gallary = (props) => {
     const [open, setOpen] = React.useState(false);
@@ -40,12 +19,17 @@ const Gallary = (props) => {
 
     return (
         <div>
-            <PhotoAlbum layout="rows" photos={photos} onClick={({ index }) => { openCurrentPhoto(index); }} />
+            <EntryTitle entryTitle={props.entryTitle} />
+            <div className="photo-album-container">
+                <PhotoAlbum layout="rows" photos={photoAlbumData.photos} onClick={({ index }) => { openCurrentPhoto(index); }} />
+            </div>
+            <ShareButtonsContainer shareButtons={props.shareButtons} />
+            <LikeButton />
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}
                 index={photoIndex}
-                slides={photos}
+                slides={photoAlbumData.photos}
             />
         </div>
     )

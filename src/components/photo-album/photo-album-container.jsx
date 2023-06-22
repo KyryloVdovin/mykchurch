@@ -3,8 +3,8 @@ import Gallary from './photo-album';
 
 let mapStatetoProps = (state) => {
     return {
-        repentancePrayer: state.repentancePage.repentancePrayer,
-        entryTitle: state.repentancePage.entryTitle,
+        photos: state.photoAlbumPage.photos,
+        entryTitle: state.photoAlbumPage.entryTitle,
         shareButtons: state.repentancePage.shareButtons,
     }
 }
