@@ -1,21 +1,83 @@
-.form-container label{
+.form-container label {
     display: block;
     text-align: left;
 }
-.form-container input{
+
+.form-container input {
     display: flex;
     width: 30%;
     min-width: 180px;
     height: 30px;
     padding: 16px;
 }
-.form-container textarea{
+
+.form-container textarea {
     display: flex;
     width: 100%;
     min-width: 180px;
     height: 166px;
     padding: 16px;
 }
+
 .form-container {
     margin-bottom: 20px;
+}
+
+.contactUs-container {
+    margin-bottom: 50px;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.radio-options input {
+    width: 16px;
+    height: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.radio-options span {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.contactUs-container label {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.submit-btn {
+    display: block;
+    padding: 5px;
+    height: 30px;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-weight: 600;
+
+    color: #2BCB96;
+    background: white;
+    border: 2px solid #2BCB96;
+    border-radius: 17px;
+    
+    transition: all .5s ease-in-out;
+}
+
+.submit-btn:hover {
+    color: white;
+    background: #2BCB96;
+}
+.share-buttons{
+    margin-bottom: 200px;
 }

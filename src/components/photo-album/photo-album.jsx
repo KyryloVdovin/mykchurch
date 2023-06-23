@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { PhotoAlbum } from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -11,17 +11,25 @@ import './photo-album.css';
 const Gallary = (props) => {
     const [open, setOpen] = React.useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
+    const cont = useRef();
 
     const openCurrentPhoto = (index) => {
         setPhotoIndex(index);
         setOpen(true);
     }
 
+    const getColumns = (containerWidth) => {
+        if (containerWidth < 400) return 1;
+        if (containerWidth < 800) return 2;
+        return 2;
+    }
+
     return (
         <div>
             <EntryTitle entryTitle={props.entryTitle} />
-            <div className="photo-album-container">
-                <PhotoAlbum layout="rows" photos={photoAlbumData.photos} onClick={({ index }) => { openCurrentPhoto(index); }} />
+            <div ref={cont} className="photo-album-container">
+                <PhotoAlbum columns={(containerWidth) => getColumns(containerWidth)}
+                    layout="masonry" photos={photoAlbumData.photos} onClick={({ index, }) => { openCurrentPhoto(index); }} />
             </div>
             <ShareButtonsContainer shareButtons={props.shareButtons} />
             <LikeButton />
