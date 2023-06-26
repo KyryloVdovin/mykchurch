@@ -1,11 +1,15 @@
 import MinistryPost from './ministry-post';
 
 const MainContent = (props) => {
-    const ministryPosts = props.ministryPosts.map(post => 
-        { return <MinistryPost url={post.url}/> });
+    const reversedMinistryPosts = [...props.ministryPosts].reverse()
+    const ministryPosts = reversedMinistryPosts.map(post => {
+        return <MinistryPost
+            shareButtons={props.shareButtons} url={post.url} data={post.data}/>
+    });
+
     return (
         <div>
-            <div>
+            <div className='main-content'>
                 {ministryPosts}
             </div>
         </div>

@@ -1,0 +1,39 @@
+.video-wrapper{
+    margin-bottom: 50px;
+}
+.post{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+}
+.post header{
+    margin-bottom: 50px;
+}
+.like-btn-container{
+    margin-bottom: 30px;
+}
+article:last-child .post{
+    border-bottom: none;
+}
+.post h2 a{
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #666;
+}
+.post h2{
+    margin-bottom: 5px;
+}
+.entry-meta a{
+    font-size: 0.81em;
+    text-transform: uppercase;
+    color: #999;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.entry-meta {
+    text-align: left;
+}
+.header-title-hover:hover{
+    color: #1c7c7c;
+}

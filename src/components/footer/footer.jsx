@@ -1,5 +1,6 @@
 import facebookIcon from '../../images/icons/icon-facebook.png';
 import youtubeIcon from '../../images/icons/icon-youtube.png';
+import { NavLink } from "react-router-dom";
 import './footer.css';
 
 const Footer = () => {
@@ -10,14 +11,14 @@ const Footer = () => {
                     <div class="menu-container">
                         <ul class="social-network-menu">
                             <li class="social-network-item">
-                                <a target="_blank" href="https://www.facebook.com/CerkovIisusaHristaNikolaev/">
+                                <NavLink target="_blank" to="https://www.facebook.com/CerkovIisusaHristaNikolaev/">
                                     <img className='social-network-icon' src={facebookIcon} alt="facebook-icon" />
-                                </a>
+                                </NavLink>
                             </li>
                             <li class="social-network-item">
-                                <a target="_blank" href="https://www.youtube.com/channel/UC6-__Kvyrc7N2cvLuHqAVxg">
+                                <NavLink target="_blank" to="https://www.youtube.com/channel/UC6-__Kvyrc7N2cvLuHqAVxg">
                                     <img className='social-network-icon' src={youtubeIcon} alt="youtube-icon" />
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

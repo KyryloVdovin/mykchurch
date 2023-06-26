@@ -4,6 +4,7 @@ import MainContent from './main-content';
 const mapDispatchToProps = (state) => {
     return {
         ministryPosts: state.mainPage.posts,
+        shareButtons: state.repentancePage.shareButtons,
     }
 }
 

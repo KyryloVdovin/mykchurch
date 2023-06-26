@@ -1,4 +1,5 @@
 import PrimaryMenu from './primary-menu';
+import { NavLink } from "react-router-dom";
 import './header.css';
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
         <header className='site-header'>
             <div>
                 <p className='site-title'>
-                    <a href='https://nikchurch.wordpress.com/'>Церковь Иисуса Христа</a>
+                    <NavLink to='/'>Церковь Иисуса Христа</NavLink>
                 </p>
             </div>
             <PrimaryMenu />

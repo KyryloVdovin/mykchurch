@@ -5,7 +5,7 @@ import './contact-us.css';
 const ContactUs = (props) => {
     return (
         <div>
-            <ContactUsForm />
+            <ContactUsForm isFetching={props.isFetching} sendEmail={props.sendEmail}/>
             <div className="share-buttons">
                 <ShareButtonsContainer shareButtons={props.shareButtons} />
             </div>
