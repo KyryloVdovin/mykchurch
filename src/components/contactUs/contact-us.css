@@ -81,3 +81,13 @@
 .share-buttons{
     margin-bottom: 200px;
 }
+.radio-container{
+    float: left;
+}
+.radio-container span{
+    min-width: 45px;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
