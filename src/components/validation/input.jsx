@@ -1,6 +1,6 @@
 import { findInputError, isFormInvalid } from './validation';
 import { useFormContext } from "react-hook-form";
-
+import './input-error.css';
 export const Input = ({ label, name, type, id, placeholder, validation }) => {
     const { register, formState: { errors } } = useFormContext();
 
