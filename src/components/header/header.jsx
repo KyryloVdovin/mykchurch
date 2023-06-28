@@ -7,7 +7,7 @@ const Header = () => {
         <header className='site-header'>
             <div>
                 <p className='site-title'>
-                    <NavLink to='/'>Церковь Иисуса Христа</NavLink>
+                    <NavLink to='/mykchurch'>Церковь Иисуса Христа</NavLink>
                 </p>
             </div>
             <PrimaryMenu />
