@@ -34,7 +34,7 @@ const PageContent = () => {
             <Route path='/repent' element={<RepentanceContainer />} />
             <Route path='/photos' element={<PhotoAlbumContainer />} />
             <Route path="/contactUs" element={<ContactUsContainer />} />
-            <Route path="/" element={<MainContentContainer />} />
+            <Route path="/mykchurch" element={<MainContentContainer />} />
           </Routes>
         </div>
         <Footer />
