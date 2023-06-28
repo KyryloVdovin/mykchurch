@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mykchurch/static/css/main.967195b4.css",
-    "main.js": "/mykchurch/static/js/main.5ec730c6.js",
+    "main.js": "/mykchurch/static/js/main.644fa100.js",
     "static/js/787.bb7be07e.chunk.js": "/mykchurch/static/js/787.bb7be07e.chunk.js",
     "static/media/skype-icon-btn.png": "/mykchurch/static/media/skype-icon-btn.7af2ae3c73cda53ec695.png",
     "static/media/icon-facebook.png": "/mykchurch/static/media/icon-facebook.fa8dfe9df21f0650d850.png",
@@ -11,11 +11,11 @@
     "static/media/star-like-btn-hover.svg": "/mykchurch/static/media/star-like-btn-hover.c1814d72e86ccdf48f75.svg",
     "static/media/star-like-btn.svg": "/mykchurch/static/media/star-like-btn.2325522fe9a7ce8d8c68.svg",
     "main.967195b4.css.map": "/mykchurch/static/css/main.967195b4.css.map",
-    "main.5ec730c6.js.map": "/mykchurch/static/js/main.5ec730c6.js.map",
+    "main.644fa100.js.map": "/mykchurch/static/js/main.644fa100.js.map",
     "787.bb7be07e.chunk.js.map": "/mykchurch/static/js/787.bb7be07e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.967195b4.css",
-    "static/js/main.5ec730c6.js"
+    "static/js/main.644fa100.js"
   ]
 }
